@@ -1,0 +1,10 @@
+[Player]
+volume=100
+
+[MainWindow]
+showtray=false
+keeprunning=false
+startupbehaviour=2
+
+[LibraryConfig]
+last_path=/mnt/four/musique

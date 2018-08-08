@@ -1,0 +1,3 @@
+apt -y install torbrowser-launcher
+
+systemctl disable tor.service
