@@ -1,0 +1,43 @@
+apt -y remove firefox
+apt -y remove firefox-locale-en
+
+zebr0-script run script-common-upgrade
+zebr0-script run script-install-git
+zebr0-script run script-install-chrome
+zebr0-script run script-install-doublecmd
+zebr0-script run script-install-clementine
+zebr0-script run script-install-deluge
+
+apt -y install vim
+apt -y install net-tools
+apt -y install htop
+apt -y install gparted
+apt -y install ssh
+apt -y install vlc
+apt -y install qcomicbook
+
+mkdir /mnt/four
+zebr0-lookup script-desktop-fstab >> /etc/fstab
+mount -a
+
+su ubuntu -c "cd ~/Pictures && wget https://orig15.deviantart.net/2ae2/f/2012/124/1/7/commission___shyla_and_jelena_by_ceal_sakura_ai-d4yid5o.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://orig12.deviantart.net/b45a/f/2015/301/6/3/autumn___countryside_by_grivetart-d9eoa16.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://orig07.deviantart.net/2f9e/f/2017/030/f/5/eikthyrnir__clan_of_the_stag___northgard_by_kurunya-dax91z8.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://orig14.deviantart.net/0a96/f/2016/265/2/d/blue_pony___enm_by_moxie2d-daihrun.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://orig10.deviantart.net/60be/f/2016/347/2/1/winter_morning_run___enm_by_moxie2d-darj7d9.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/fbb7/f/2016/273/2/d/look_in_my_eyes___enm_by_moxie2d-dajdp69.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://orig09.deviantart.net/d149/f/2016/353/7/7/anime_eyes_are_the_best___enm_by_moxie2d-das64ld.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/4c91/f/2017/039/a/5/anywhere_you_go_by_moxie2d-daycs7f.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://orig06.deviantart.net/d567/f/2016/319/3/7/i_just_really_like_making_hair_glow___enm_by_moxie2d-daojihw.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://orig08.deviantart.net/b287/f/2017/032/1/0/your_own_world___enm_by_moxie2d-daxj3b8.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/20dd/f/2017/151/1/8/book_cover_by_kuvshinov_ilya-dbb1x1k.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/35ad/f/2016/270/f/f/tokyo_street_by_arsenixc-daj4ocm.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/02c2/f/2017/316/7/a/loundraw_by_mazerty-dbti6im.png"
+su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/3f46/f/2017/314/3/4/solar_by_aenami-dbtd0ud.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/4bb2/f/2017/310/8/3/ubaye_valley_by_grivetart-dbswxm6.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/8a25/f/2018/014/d/f/jupiter_s_colorful_cloud_belts_by_mazerty-dbzzmj6.png"
+su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/8720/f/2018/170/6/0/yonema_by_mazerty-dcewboo.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/cc51/f/2018/216/a/c/sound_of_sea_by_berryverrine-dcj894u.png"
+
+su ubuntu -c "gsettings set org.gnome.desktop.screensaver lock-enabled false"
+su ubuntu -c "gsettings set org.gnome.desktop.session idle-delay 0"
