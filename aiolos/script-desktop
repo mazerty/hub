@@ -44,6 +44,7 @@ su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/4bb2/f/2017/31
 su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/8a25/f/2018/014/d/f/jupiter_s_colorful_cloud_belts_by_mazerty-dbzzmj6.png"
 su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/8720/f/2018/170/6/0/yonema_by_mazerty-dcewboo.jpg"
 su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/cc51/f/2018/216/a/c/sound_of_sea_by_berryverrine-dcj894u.png"
+su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/2ba1/f/2018/224/a/4/from_this_moment_by_aenami-dcjxoz7.png"
 
 su ubuntu -c "gsettings set org.gnome.desktop.screensaver lock-enabled false"
 su ubuntu -c "gsettings set org.gnome.desktop.session idle-delay 0"
