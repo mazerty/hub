@@ -48,5 +48,6 @@ su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/2ba1/f/2018/22
 
 su ubuntu -c "gsettings set org.gnome.desktop.screensaver lock-enabled false"
 su ubuntu -c "gsettings set org.gnome.desktop.session idle-delay 0"
+su ubuntu -c "gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type nothing"
 
 zebr0-lookup script-desktop-patch | patch /etc/systemd/logind.conf
