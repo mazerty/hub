@@ -1,5 +1,11 @@
 apt -y remove firefox
 apt -y remove firefox-locale-en
+apt -y remove xul-ext-ubufox
+apt -y remove thunderbird
+apt -y remove libreoffice-core
+apt -y remove libreoffice-common
+apt -y remove transmission-common
+apt -y remove blueman
 
 zebr0-script run script-common-upgrade
 zebr0-script run script-install-git
@@ -11,7 +17,6 @@ zebr0-script run script-install-pycharmcommunity
 zebr0-script run script-install-torbrowser
 
 apt -y install vim
-apt -y install net-tools
 apt -y install htop
 apt -y install gparted
 apt -y install ssh
@@ -46,8 +51,8 @@ su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/8720/f/2018/17
 su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/cc51/f/2018/216/a/c/sound_of_sea_by_berryverrine-dcj894u.png"
 su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/2ba1/f/2018/224/a/4/from_this_moment_by_aenami-dcjxoz7.png"
 
-su ubuntu -c "gsettings set org.gnome.desktop.screensaver lock-enabled false"
-su ubuntu -c "gsettings set org.gnome.desktop.session idle-delay 0"
-su ubuntu -c "gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type nothing"
-
-zebr0-lookup script-desktop-patch | patch /etc/systemd/logind.conf
+su ubuntu -c "xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-home -s false"
+su ubuntu -c "xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-filesystem -s false"
+su ubuntu -c "xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-trash -s false"
+su ubuntu -c "xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lid-action-on-battery -s 0"
+su ubuntu -c "xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lid-action-on-ac -s 0"

@@ -1,4 +1,0 @@
-24c24
-< #HandleLidSwitch=suspend
----
-> HandleLidSwitch=ignore
