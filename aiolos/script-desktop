@@ -57,3 +57,8 @@ su ubuntu -c "xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-fi
 su ubuntu -c "xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-trash -s false"
 su ubuntu -c "xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lid-action-on-battery -s 0"
 su ubuntu -c "xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lid-action-on-ac -s 0"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Primary><Alt>l' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F4' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F5' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F9' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt>Insert' -r"
