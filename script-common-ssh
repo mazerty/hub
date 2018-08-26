@@ -1,4 +1,5 @@
 su ubuntu -c "mkdir -p ~/.ssh"
 su ubuntu -c "ssh-keygen -f ~/.ssh/id_rsa -N ''"
+su ubuntu -c "zebr0-lookup script-common-ssh-config > ~/.ssh/config"
 
 zebr0-lookup script-common-ssh-patch | patch /etc/ssh/ssh_config
