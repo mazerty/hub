@@ -1,36 +1,24 @@
 apt -y remove firefox
 apt -y remove firefox-locale-en
-apt -y remove xul-ext-ubufox
-apt -y remove thunderbird
-apt -y remove libreoffice-core
-apt -y remove libreoffice-common
-apt -y remove transmission-common
-apt -y remove blueman
 
 zebr0-script run script-common-upgrade
 zebr0-script run script-install-git
 zebr0-script run script-install-chrome
 zebr0-script run script-install-doublecmd
-zebr0-script run script-install-lxd
-zebr0-script run script-install-terminator
-zebr0-script run script-install-pycharmcommunity
-zebr0-script run script-install-torbrowser
+zebr0-script run script-install-clementine
+zebr0-script run script-install-deluge
 
 apt -y install vim
+apt -y install net-tools
 apt -y install htop
 apt -y install gparted
 apt -y install ssh
-apt -y install devscripts
-apt -y install debhelper
-apt -y install zebr0-template
+apt -y install vlc
+apt -y install qcomicbook
 
-add-apt-repository -y ppa:mazerty/master
-apt -y install prfg
-apt -y install bookcipher
-
-mkdir -p /home/ubuntu/.aws
-zebr0-lookup script-desktop-awscredentials > /home/ubuntu/.aws/credentials
-chown -R ubuntu:ubuntu /home/ubuntu/.aws
+mkdir /mnt/four
+zebr0-lookup script-fstab >> /etc/fstab
+mount -a
 
 su ubuntu -c "cd ~/Pictures && wget https://orig15.deviantart.net/2ae2/f/2012/124/1/7/commission___shyla_and_jelena_by_ceal_sakura_ai-d4yid5o.jpg"
 su ubuntu -c "cd ~/Pictures && wget https://orig12.deviantart.net/b45a/f/2015/301/6/3/autumn___countryside_by_grivetart-d9eoa16.jpg"
@@ -52,15 +40,5 @@ su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/8720/f/2018/17
 su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/cc51/f/2018/216/a/c/sound_of_sea_by_berryverrine-dcj894u.png"
 su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/2ba1/f/2018/224/a/4/from_this_moment_by_aenami-dcjxoz7.png"
 
-su ubuntu -c "xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-home -s false"
-su ubuntu -c "xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-filesystem -s false"
-su ubuntu -c "xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-trash -s false"
-su ubuntu -c "xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lid-action-on-battery -s 0"
-su ubuntu -c "xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lid-action-on-ac -s 0"
-su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Primary><Alt>l' -r"
-su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F4' -r"
-su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F5' -r"
-su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F9' -r"
-su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt>Insert' -r"
-
-zebr0-lookup script-desktop-patch | patch /etc/systemd/logind.conf
+su ubuntu -c "gsettings set org.gnome.desktop.screensaver lock-enabled false"
+su ubuntu -c "gsettings set org.gnome.desktop.session idle-delay 0"

@@ -5,19 +5,20 @@ zebr0-script run script-common-upgrade
 zebr0-script run script-install-git
 zebr0-script run script-install-chrome
 zebr0-script run script-install-doublecmd
-zebr0-script run script-install-clementine
-zebr0-script run script-install-deluge
 
 apt -y install vim
 apt -y install net-tools
 apt -y install htop
 apt -y install gparted
 apt -y install ssh
-apt -y install vlc
-apt -y install qcomicbook
+apt -y install nvidia-384
+apt -y install pinta
+apt -y install puddletag
+apt -y install eyed3
+apt -y install steam
 
-mkdir /mnt/four
-zebr0-lookup script-desktop-fstab >> /etc/fstab
+mkdir /mnt/one
+zebr0-lookup script-fstab >> /etc/fstab
 mount -a
 
 su ubuntu -c "cd ~/Pictures && wget https://orig15.deviantart.net/2ae2/f/2012/124/1/7/commission___shyla_and_jelena_by_ceal_sakura_ai-d4yid5o.jpg"
