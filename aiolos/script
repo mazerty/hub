@@ -22,7 +22,6 @@ apt -y install gparted
 apt -y install ssh
 apt -y install devscripts
 apt -y install debhelper
-apt -y install zebr0-template
 
 add-apt-repository -y ppa:mazerty/master
 apt -y install prfg
