@@ -51,11 +51,6 @@ su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/8720/f/2018/17
 su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/cc51/f/2018/216/a/c/sound_of_sea_by_berryverrine-dcj894u.png"
 su ubuntu -c "cd ~/Pictures && wget https://orig00.deviantart.net/2ba1/f/2018/224/a/4/from_this_moment_by_aenami-dcjxoz7.png"
 
-su ubuntu -c "xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-home -s false"
-su ubuntu -c "xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-filesystem -s false"
-su ubuntu -c "xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-trash -s false"
-su ubuntu -c "xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lid-action-on-battery -s 0"
-su ubuntu -c "xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lid-action-on-ac -s 0"
 su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Primary><Alt>l' -r"
 su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F1' -r"
 su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F2' -r"
