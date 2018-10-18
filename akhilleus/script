@@ -1,10 +1,10 @@
 apt -y remove firefox
 apt -y remove firefox-locale-en
 
-zebr0-script run script-common-upgrade
-zebr0-script run script-install-git
-zebr0-script run script-install-chrome
-zebr0-script run script-install-doublecmd
+## script script-common-upgrade
+## script script-install-git
+## script script-install-chrome
+## script script-install-doublecmd
 
 apt -y install vim
 apt -y install net-tools
@@ -18,7 +18,8 @@ apt -y install eyed3
 apt -y install steam
 
 mkdir /mnt/one
-zebr0-lookup script-fstab >> /etc/fstab
+## lookup script-fstab /var/tmp/fstab-append
+cat /var/tmp/fstab-append >> /etc/fstab
 mount -a
 
 su ubuntu -c "cd ~/Pictures && wget https://orig15.deviantart.net/2ae2/f/2012/124/1/7/commission___shyla_and_jelena_by_ceal_sakura_ai-d4yid5o.jpg"

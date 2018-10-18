@@ -1,10 +1,10 @@
 apt -y remove firefox
 apt -y remove firefox-locale-en
 
-zebr0-script run script-common-upgrade
-zebr0-script run script-install-git
-zebr0-script run script-install-chrome
-zebr0-script run script-install-doublecmd
+## script script-common-upgrade
+## script script-install-git
+## script script-install-chrome
+## script script-install-doublecmd
 
 apt -y install vim
 apt -y install net-tools
