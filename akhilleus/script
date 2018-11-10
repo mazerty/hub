@@ -16,7 +16,6 @@ apt -y remove blueman
 ## script script-install-pycharmcommunity
 
 apt -y install vim
-apt -y install net-tools
 apt -y install htop
 apt -y install gparted
 apt -y install ssh
