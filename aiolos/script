@@ -31,6 +31,11 @@ mkdir -p /home/ubuntu/.aws
 ## lookup script-awscredentials /home/ubuntu/.aws/credentials
 chown -R ubuntu:ubuntu /home/ubuntu/.aws
 
+mkdir /mnt/slow
+## lookup script-fstab /var/tmp/fstab-append
+cat /var/tmp/fstab-append >> /etc/fstab
+mount -a
+
 su ubuntu -c "cd ~/Pictures && wget https://orig15.deviantart.net/2ae2/f/2012/124/1/7/commission___shyla_and_jelena_by_ceal_sakura_ai-d4yid5o.jpg"
 su ubuntu -c "cd ~/Pictures && wget https://orig12.deviantart.net/b45a/f/2015/301/6/3/autumn___countryside_by_grivetart-d9eoa16.jpg"
 su ubuntu -c "cd ~/Pictures && wget https://orig07.deviantart.net/2f9e/f/2017/030/f/5/eikthyrnir__clan_of_the_stag___northgard_by_kurunya-dax91z8.jpg"
