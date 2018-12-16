@@ -1,0 +1,74 @@
+apt -y remove firefox
+apt -y remove firefox-locale-en
+apt -y remove xul-ext-ubufox
+apt -y remove thunderbird
+apt -y remove libreoffice-core
+apt -y remove libreoffice-common
+apt -y remove transmission-common
+apt -y remove blueman
+
+## script script-common-upgrade
+## script script-install-git
+## script script-install-chrome
+## script script-install-doublecmd
+## script script-install-terminator
+## script script-install-lxd
+## script script-install-pycharmcommunity
+## script script-install-torbrowser
+## script script-install-clementine
+## script script-install-deluge
+
+add-apt-repository -y ppa:mazerty/master
+apt -y install prfg
+apt -y install bookcipher
+apt -y install vim
+apt -y install htop
+apt -y install gparted
+apt -y install ssh
+apt -y install pinta
+apt -y install puddletag
+apt -y install eyed3
+apt -y install vlc
+apt -y install qcomicbook
+
+mkdir -p /home/ubuntu/.aws
+## lookup script-common-desktop-awscredentials /home/ubuntu/.aws/credentials
+chown -R ubuntu:ubuntu /home/ubuntu/.aws
+
+mkdir /mnt/perm
+## lookup script-common-desktop-fstab /var/tmp/fstab-append
+cat /var/tmp/fstab-append >> /etc/fstab
+mount -a
+
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/autumn___countryside_by_grivetart-d9eoa16.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/eikthyrnir__clan_of_the_stag___northgard_by_kurunya-dax91z8.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/blue_pony___enm_by_moxie2d-daihrun.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/winter_morning_run___enm_by_moxie2d-darj7d9.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/look_in_my_eyes___enm_by_moxie2d-dajdp69.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/anywhere_you_go_by_moxie2d-daycs7f.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/i_just_really_like_making_hair_glow___enm_by_moxie2d-daojihw.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/your_own_world___enm_by_moxie2d-daxj3b8.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/book_cover_by_kuvshinov_ilya-dbb1x1k.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/64209157_p0.png"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/solar_by_aenami-dbtd0ud.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/ubaye_valley_by_grivetart-dbswxm6.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/jupiter_s_colorful_cloud_belts_by_mazerty-dbzzmj6.png"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/from_this_moment_by_aenami-dcjxoz7.png"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/68977253_p0.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/72125545_p0.jpg"
+su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/72125578_p0.jpg"
+
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Primary><Alt>l' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F1' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F2' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F3' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F4' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F5' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F6' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F7' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F8' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F9' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F10' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F11' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F12' -r"
+su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt>Insert' -r"
