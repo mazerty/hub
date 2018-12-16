@@ -17,6 +17,7 @@ apt -y remove blueman
 ## script script-install-torbrowser
 ## script script-install-clementine
 ## script script-install-deluge
+## script script-install-youtubedl
 
 add-apt-repository -y ppa:mazerty/master
 apt -y install prfg

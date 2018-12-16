@@ -1,0 +1,3 @@
+## script script-install-pip
+
+pip install youtube-dl
