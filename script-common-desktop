@@ -1,11 +1,11 @@
-apt -y remove firefox
-apt -y remove firefox-locale-en
-apt -y remove xul-ext-ubufox
-apt -y remove thunderbird
-apt -y remove libreoffice-core
-apt -y remove libreoffice-common
-apt -y remove transmission-common
-apt -y remove blueman
+apt-get -y remove firefox
+apt-get -y remove firefox-locale-en
+apt-get -y remove xul-ext-ubufox
+apt-get -y remove thunderbird
+apt-get -y remove libreoffice-core
+apt-get -y remove libreoffice-common
+apt-get -y remove transmission-common
+apt-get -y remove blueman
 
 ## script script-common-upgrade
 ## script script-install-git
@@ -20,18 +20,18 @@ apt -y remove blueman
 ## script script-install-youtubedl
 
 add-apt-repository -y ppa:mazerty/master
-apt -y install prfg
-apt -y install bookcipher
-apt -y install curl
-apt -y install vim
-apt -y install htop
-apt -y install gparted
-apt -y install ssh
-apt -y install pinta
-apt -y install puddletag
-apt -y install eyed3
-apt -y install vlc
-apt -y install qcomicbook
+apt-get -y install prfg
+apt-get -y install bookcipher
+apt-get -y install curl
+apt-get -y install vim
+apt-get -y install htop
+apt-get -y install gparted
+apt-get -y install ssh
+apt-get -y install pinta
+apt-get -y install puddletag
+apt-get -y install eyed3
+apt-get -y install vlc
+apt-get -y install qcomicbook
 
 mkdir -p /home/ubuntu/.aws
 ## lookup script-common-desktop-awscredentials /home/ubuntu/.aws/credentials

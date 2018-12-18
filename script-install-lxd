@@ -1,8 +1,8 @@
 ## script script-common-ssh
 
-apt -y install zfsutils-linux
-apt -y install lxd
-apt -y install zebr0-lxd
+apt-get -y install zfsutils-linux
+apt-get -y install lxd
+apt-get -y install zebr0-lxd
 
 ## lookup script-install-lxd-preseed /var/tmp/lxd-preseed.yml
 cat /var/tmp/lxd-preseed.yml | lxd init --preseed

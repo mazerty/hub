@@ -1,4 +1,4 @@
 ## script script-common-desktop
 
-apt -y install nvidia-384
-apt -y install steam
+apt-get -y install nvidia-384
+apt-get -y install steam

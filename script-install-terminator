@@ -1,4 +1,4 @@
-apt -y install terminator
+apt-get -y install terminator
 
 mkdir -p /home/ubuntu/.config/terminator
 ## lookup script-install-terminator-conf /home/ubuntu/.config/terminator/config

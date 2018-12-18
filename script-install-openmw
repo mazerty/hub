@@ -1,6 +1,6 @@
 add-apt-repository -y ppa:openmw/openmw
 
-apt -y install openmw
+apt-get -y install openmw
 
 mkdir -p /tmp/morrowind
 mount -o loop /mnt/one/jeux/isos/morrowind/morrowind.iso /tmp/morrowind

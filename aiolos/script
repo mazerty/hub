@@ -1,7 +1,7 @@
 ## script script-common-desktop
 
-apt -y install devscripts
-apt -y install debhelper
+apt-get -y install devscripts
+apt-get -y install debhelper
 
 ## lookup script-patch /var/tmp/logind.conf.patch
 patch /etc/systemd/logind.conf /var/tmp/logind.conf.patch
