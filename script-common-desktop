@@ -22,6 +22,7 @@ apt -y remove blueman
 add-apt-repository -y ppa:mazerty/master
 apt -y install prfg
 apt -y install bookcipher
+apt -y install curl
 apt -y install vim
 apt -y install htop
 apt -y install gparted
