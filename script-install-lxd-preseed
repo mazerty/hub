@@ -23,3 +23,8 @@ profiles:
       type: nic
       nictype: bridged
       parent: lxd0
+  config:
+    user.user-data: |
+      #cloud-config
+      ssh_authorized_keys:
+      - {{ "cat /home/ubuntu/.ssh/id_rsa.pub" | sh }}
