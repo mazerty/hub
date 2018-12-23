@@ -37,7 +37,7 @@ mkdir -p /home/ubuntu/.aws
 ## lookup script-common-desktop-awscredentials /home/ubuntu/.aws/credentials
 chown -R ubuntu:ubuntu /home/ubuntu/.aws
 
-mkdir /mnt/perm
+mkdir -p /mnt/perm
 ## lookup script-common-desktop-fstab /var/tmp/fstab-append
 cat /var/tmp/fstab-append >> /etc/fstab
 mount -a
