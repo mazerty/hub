@@ -3,8 +3,8 @@ add-apt-repository -y ppa:openmw/openmw
 apt-get -y install openmw
 
 mkdir -p /tmp/morrowind
-mount -o loop /mnt/one/jeux/isos/morrowind/morrowind.iso /tmp/morrowind
+mount -o loop /mnt/perm/jeux/isos/morrowind/morrowind.iso /tmp/morrowind
 mkdir -p /tmp/tribunal
-mount -o loop /mnt/one/jeux/isos/morrowind/tribunal.iso /tmp/tribunal
+mount -o loop /mnt/perm/jeux/isos/morrowind/tribunal.iso /tmp/tribunal
 mkdir -p /tmp/bloodmoon
-mount -o loop /mnt/one/jeux/isos/morrowind/bloodmoon.iso /tmp/bloodmoon
+mount -o loop /mnt/perm/jeux/isos/morrowind/bloodmoon.iso /tmp/bloodmoon
