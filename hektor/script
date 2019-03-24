@@ -1,1 +1,2 @@
-## script script-common-desktop
+---
+- include: script-common-desktop
