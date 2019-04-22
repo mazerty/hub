@@ -1,7 +1,4 @@
 ---
-- apt-get -y remove firefox
-- apt-get -y remove firefox-locale-en
-- apt-get -y remove xul-ext-ubufox
 - apt-get -y remove thunderbird
 - apt-get -y remove libreoffice-core
 - apt-get -y remove libreoffice-common
@@ -32,7 +29,6 @@
 - apt-get -y install puddletag
 - apt-get -y install eyed3
 - apt-get -y install vlc
-- apt-get -y install qcomicbook
 
 - mkdir -p /home/ubuntu/.aws
 - lookup: script-common-desktop-awscredentials
@@ -45,23 +41,23 @@
 - cat /var/tmp/fstab-append >> /etc/fstab
 - mount -a
 
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/autumn___countryside_by_grivetart-d9eoa16.jpg"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/eikthyrnir__clan_of_the_stag___northgard_by_kurunya-dax91z8.jpg"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/blue_pony___enm_by_moxie2d-daihrun.jpg"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/winter_morning_run___enm_by_moxie2d-darj7d9.jpg"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/look_in_my_eyes___enm_by_moxie2d-dajdp69.jpg"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/anywhere_you_go_by_moxie2d-daycs7f.jpg"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/i_just_really_like_making_hair_glow___enm_by_moxie2d-daojihw.jpg"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/your_own_world___enm_by_moxie2d-daxj3b8.jpg"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/book_cover_by_kuvshinov_ilya-dbb1x1k.jpg"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/64209157_p0.png"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/solar_by_aenami-dbtd0ud.jpg"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/ubaye_valley_by_grivetart-dbswxm6.jpg"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/jupiter_s_colorful_cloud_belts_by_mazerty-dbzzmj6.png"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/from_this_moment_by_aenami-dcjxoz7.png"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/68977253_p0.jpg"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/72125545_p0.jpg"
-- su ubuntu -c "cd ~/Pictures && wget https://s3.eu-central-1.amazonaws.com/mazerty-mirror/pictures/72125578_p0.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/64209157_p0.png"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/68977253_p0.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/72125545_p0.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/72125578_p0.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/anywhere_you_go_by_moxie2d-daycs7f.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/autumn___countryside_by_grivetart-d9eoa16.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/blue_pony___enm_by_moxie2d-daihrun.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/book_cover_by_kuvshinov_ilya-dbb1x1k.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/eikthyrnir__clan_of_the_stag___northgard_by_kurunya-dax91z8.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/from_this_moment_by_aenami-dcjxoz7.png"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/i_just_really_like_making_hair_glow___enm_by_moxie2d-daojihw.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/jupiter_s_colorful_cloud_belts_by_mazerty-dbzzmj6.png"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/look_in_my_eyes___enm_by_moxie2d-dajdp69.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/solar_by_aenami-dbtd0ud.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/ubaye_valley_by_grivetart-dbswxm6.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/winter_morning_run___enm_by_moxie2d-darj7d9.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/your_own_world___enm_by_moxie2d-daxj3b8.jpg"
 
 - su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Primary><Alt>l' -r"
 - su ubuntu -c "xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary>F1' -r"
