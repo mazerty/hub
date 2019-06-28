@@ -4,4 +4,5 @@
 - lookup: script-install-nginx-patch
   path: /var/tmp/nginx.service.patch
 - patch /lib/systemd/system/nginx.service /var/tmp/nginx.service.patch
-- systemctl daemon-reload
+
+- rm /etc/nginx/sites-enabled/default
