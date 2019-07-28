@@ -1,11 +1,3 @@
 ---
-- include: script-common-upgrade
-- include: script-install-heal-ssl
-- include: script-install-lxd
-
-- zebr0-lxd create
-- lookup: script-aws-nginx
-  path: /etc/nginx/sites-available/aws
-- ln -sf /etc/nginx/sites-available/aws /etc/nginx/sites-enabled/aws
-
-- echo "sleep 1 && shutdown -r now" | at now
+- include: script-common-host
+- include: script-common-reboot
