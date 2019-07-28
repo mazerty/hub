@@ -20,6 +20,7 @@
 - add-apt-repository -y ppa:mazerty/master
 - apt-get -y install prfg
 - apt-get -y install bookcipher
+
 - apt-get -y install curl
 - apt-get -y install vim
 - apt-get -y install htop
@@ -29,6 +30,7 @@
 - apt-get -y install puddletag
 - apt-get -y install eyed3
 - apt-get -y install vlc
+- apt-get -y install qcomicbook
 
 - mkdir -p /home/ubuntu/.aws
 - lookup: script-common-desktop-awscredentials

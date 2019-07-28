@@ -1,5 +1,7 @@
 ---
 - include: script-common-desktop
 
-- apt-get -y install nvidia-384
+- add-apt-repository -y ppa:graphics-drivers/ppa
+- apt-get -y install nvidia-driver-430
+
 - apt-get -y install steam
