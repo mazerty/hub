@@ -54,6 +54,7 @@
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/eikthyrnir__clan_of_the_stag___northgard_by_kurunya-dax91z8.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/from_this_moment_by_aenami-dcjxoz7.png"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/i_just_really_like_making_hair_glow___enm_by_moxie2d-daojihw.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/in_the_eye_of_the_beholder_by_joeyjazz_dd8gwte_2560x1440.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/jupiter_s_colorful_cloud_belts_by_mazerty-dbzzmj6.png"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/look_in_my_eyes___enm_by_moxie2d-dajdp69.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/solar_by_aenami-dbtd0ud.jpg"
