@@ -52,6 +52,7 @@
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/blue_pony___enm_by_moxie2d-daihrun.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/book_cover_by_kuvshinov_ilya-dbb1x1k.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/eikthyrnir__clan_of_the_stag___northgard_by_kurunya-dax91z8.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/evening_school_by_joeyjazz_ddh9k16_2560x1440.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/from_this_moment_by_aenami-dcjxoz7.png"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/i_just_really_like_making_hair_glow___enm_by_moxie2d-daojihw.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/in_the_eye_of_the_beholder_by_joeyjazz_dd8gwte_2560x1440.jpg"
