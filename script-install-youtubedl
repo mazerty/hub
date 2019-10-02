@@ -1,5 +1,0 @@
----
-- include: script-install-pip
-
-- apt-get -y install ffmpeg
-- pip install youtube-dl

@@ -6,16 +6,14 @@
 - apt-get -y remove blueman
 
 - include: script-common-upgrade
-- include: script-install-git
+- include: script-common-dev
 - include: script-install-chrome
 - include: script-install-doublecmd
 - include: script-install-terminator
 - include: script-install-lxd
-- include: script-install-pycharmcommunity
 - include: script-install-torbrowser
 - include: script-install-clementine
 - include: script-install-deluge
-- include: script-install-youtubedl
 
 - add-apt-repository -y ppa:mazerty/master
 - apt-get -y install prfg
