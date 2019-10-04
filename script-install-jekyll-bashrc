@@ -1,0 +1,2 @@
+export GEM_HOME=/home/ubuntu/gems
+export PATH=/home/ubuntu/gems/bin:$PATH

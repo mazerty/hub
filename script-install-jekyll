@@ -1,0 +1,10 @@
+---
+- apt-get -y install ruby-full
+- apt-get -y install build-essential
+- apt-get -y install zlib1g-dev
+
+- su ubuntu -c "GEM_HOME=/home/ubuntu/gems gem install jekyll bundler"
+
+- lookup: script-install-jekyll-bashrc
+  path: /var/tmp/bashrc.append
+- cat /var/tmp/bashrc.append >> /home/ubuntu/.bashrc
