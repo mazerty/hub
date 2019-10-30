@@ -14,6 +14,7 @@
 - include: script-install-torbrowser
 - include: script-install-clementine
 - include: script-install-deluge
+- include: script-install-youtubedl
 
 - add-apt-repository -y ppa:mazerty/master
 - apt-get -y install prfg
