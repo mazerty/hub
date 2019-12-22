@@ -1,0 +1,5 @@
+---
+- wget -O- https://syncthing.net/release-key.txt | apt-key add -
+- add-apt-repository "deb https://apt.syncthing.net/ syncthing stable"
+
+- apt-get -y install syncthing
