@@ -11,6 +11,7 @@
 - include: script-install-doublecmd
 - include: script-install-terminator
 - include: script-install-lxd
+- include: script-install-docker
 - include: script-install-clementine
 - include: script-install-deluge
 - include: script-install-youtubedl

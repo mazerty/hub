@@ -1,0 +1,7 @@
+---
+- wget -O- https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+- add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+
+- apt-get -y install docker-ce
+
+- usermod -aG docker ubuntu
