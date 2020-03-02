@@ -1,7 +1,4 @@
 ---
 - include: script-common-desktop
 
-- add-apt-repository -y ppa:graphics-drivers/ppa
-- apt-get -y install nvidia-driver-430
-
 - apt-get -y install steam
