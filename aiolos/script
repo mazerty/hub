@@ -1,6 +1,5 @@
 ---
 - include: script-common-desktop
-- include: script-install-torbrowser
 
 - apt-get -y install devscripts
 - apt-get -y install debhelper

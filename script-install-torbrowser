@@ -1,3 +1,0 @@
----
-- cd /opt && wget -O- https://www.torproject.org/dist/torbrowser/9.0/tor-browser-linux64-9.0_en-US.tar.xz | tar xJ
-- chown -R ubuntu:ubuntu /opt/tor-browser_en-US
