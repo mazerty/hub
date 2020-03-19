@@ -44,3 +44,13 @@
 
 - lookup: adminrc
   path: /root/adminrc
+- . /root/adminrc && openstack project create --domain default --description "Service Project" service
+- . /root/adminrc && openstack project create --domain default --description "Demo Project" demo
+- . /root/adminrc && openstack user create --domain default --password password demo
+- . /root/adminrc && openstack role create user
+- . /root/adminrc && openstack role add --project demo --user demo user
+- . /root/adminrc && openstack token issue
+
+- lookup: demorc
+  path: /root/demorc
+- . /root/demorc && openstack token issue
