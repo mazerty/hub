@@ -196,3 +196,13 @@
 - crudini --set /etc/nova/nova.conf placement password password
 - systemctl restart nova-compute.service
 - su -s /bin/sh -c "nova-manage cell_v2 discover_hosts --verbose" nova
+
+- mysql -e "CREATE DATABASE neutron;"
+- mysql -e "GRANT ALL PRIVILEGES ON neutron.* TO 'neutron'@'localhost' IDENTIFIED BY 'NEUTRON_DBPASS';"
+- mysql -e "GRANT ALL PRIVILEGES ON neutron.* TO 'neutron'@'%' IDENTIFIED BY 'NEUTRON_DBPASS';"
+- . /root/adminrc && openstack user create --domain default --password password neutron
+- . /root/adminrc && openstack role add --project service --user neutron admin
+- . /root/adminrc && openstack service create --name neutron --description "OpenStack Networking" network
+- . /root/adminrc && openstack endpoint create --region RegionOne network public http://127.0.0.1:9696
+- . /root/adminrc && openstack endpoint create --region RegionOne network admin http://127.0.0.1:9696
+- . /root/adminrc && openstack endpoint create --region RegionOne network internal http://127.0.0.1:9696
