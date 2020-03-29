@@ -206,3 +206,5 @@
 - . /root/adminrc && openstack endpoint create --region RegionOne network public http://127.0.0.1:9696
 - . /root/adminrc && openstack endpoint create --region RegionOne network admin http://127.0.0.1:9696
 - . /root/adminrc && openstack endpoint create --region RegionOne network internal http://127.0.0.1:9696
+
+- apt-get -y install neutron-server neutron-plugin-ml2 neutron-linuxbridge-agent neutron-dhcp-agent neutron-metadata-agent
