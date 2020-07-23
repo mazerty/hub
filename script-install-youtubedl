@@ -2,4 +2,4 @@
 - include: script-install-pip
 
 - apt-get -y install ffmpeg
-- su ubuntu -c "pip install --user youtube-dl"
+- su ubuntu -c "pip3 install --user youtube-dl"

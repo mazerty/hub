@@ -1,8 +1,7 @@
 ---
-- apt-get -y install python-pip
+- apt-get -y install python3-pip
 
-- su ubuntu -c "pip install --user virtualenv"
-- su ubuntu -c "pip install --user virtualenvwrapper"
+- su ubuntu -c "pip3 install --user virtualenv"
 
 - lookup: script-install-pip-bashrc
   path: /var/tmp/bashrc.pip.append

@@ -23,7 +23,6 @@
 - apt-get -y install gparted
 - apt-get -y install ssh
 - apt-get -y install seahorse
-- apt-get -y install puddletag
 - apt-get -y install eyed3
 - apt-get -y install vlc
 - apt-get -y install qcomicbook
@@ -65,7 +64,3 @@
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/winter_morning_run___enm_by_moxie2d-darj7d9.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/your_own_world___enm_by_moxie2d-daxj3b8.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/z-w-gu-5b.jpg"
-
-- lookup: script-common-desktop-patch
-  path: /var/tmp/xfce4-keyboard-shortcuts.xml.patch
-- patch /home/ubuntu/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml /var/tmp/xfce4-keyboard-shortcuts.xml.patch

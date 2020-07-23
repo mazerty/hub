@@ -2,7 +2,7 @@
 - include: script-common-ssh
 
 - apt-get -y install zfsutils-linux
-- apt-get -y install lxd
+- snap install lxd
 - apt-get -y install zebr0-lxd
 
 - lookup: script-install-lxd-preseed
