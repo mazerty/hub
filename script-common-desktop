@@ -15,7 +15,6 @@
 - include: script-install-clementine
 - include: script-install-deluge
 - include: script-install-youtubedl
-- include: script-install-syncthing
 
 - add-apt-repository -y ppa:mazerty/master
 - apt-get -y install prfg
