@@ -17,7 +17,7 @@
 - include: script-install-youtubedl
 
 - add-apt-repository -y ppa:mazerty/master
-- apt-get -y install prfg
+- apt-get -y install prbg
 - apt-get -y install bookcipher
 
 - apt-get -y install curl
