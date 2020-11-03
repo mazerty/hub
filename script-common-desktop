@@ -47,6 +47,7 @@
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/68977253_p0.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/72125545_p0.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/72125578_p0.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/83590188_p0.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/anywhere_you_go_by_moxie2d-daycs7f.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/autumn___countryside_by_grivetart-d9eoa16.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/blue_pony___enm_by_moxie2d-daihrun.jpg"
