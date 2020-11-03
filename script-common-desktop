@@ -1,7 +1,5 @@
 ---
 - apt-get -y remove thunderbird
-- apt-get -y remove libreoffice-core
-- apt-get -y remove libreoffice-common
 - apt-get -y remove transmission-common
 - apt-get -y remove blueman
 
