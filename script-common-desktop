@@ -1,5 +1,4 @@
 ---
-- apt-get -y remove thunderbird
 - apt-get -y remove transmission-common
 - apt-get -y remove blueman
 
@@ -29,6 +28,7 @@
 - apt-get -y install vlc
 - apt-get -y install qcomicbook
 - snap install gimp
+- snap install discord
 
 - mkdir -p /home/ubuntu/.aws
 - lookup: script-common-desktop-awscredentials
@@ -52,16 +52,19 @@
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/book_cover_by_kuvshinov_ilya-dbb1x1k.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/eikthyrnir__clan_of_the_stag___northgard_by_kurunya-dax91z8.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/evening_school_by_joeyjazz_ddh9k16_2560x1440.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/from_ground_to_water_by_refiend_de37t2t.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/from_this_moment_by_aenami-dcjxoz7.png"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/i_just_really_like_making_hair_glow___enm_by_moxie2d-daojihw.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/in_the_eye_of_the_beholder_by_joeyjazz_dd8gwte_2560x1440.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/jupiter_s_colorful_cloud_belts_by_mazerty-dbzzmj6.png"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/look_in_my_eyes___enm_by_moxie2d-dajdp69.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/ocean_sunset_by_evagraphic1_de31x74.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/paths_less_travelled_by_joeyjazz_ddiyrn0_2560x1440.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/solar_by_aenami-dbtd0ud.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/ubaye_valley_by_grivetart-dbswxm6.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/winter_morning_run___enm_by_moxie2d-darj7d9.jpg"
 - su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/your_own_world___enm_by_moxie2d-daxj3b8.jpg"
+- su ubuntu -c "cd ~/Pictures && wget https://mirror.mazerty.fr/pictures/z-w-gu-5b.jpg"
 
 - lookup: script-common-desktop-patch
   path: /var/tmp/xfce4-keyboard-shortcuts.xml.patch
