@@ -2,6 +2,6 @@
 - apt-get -y install doublecmd-qt
 
 - mkdir -p /home/ubuntu/.config/doublecmd
-- lookup: script-install-doublecmd-xml
-  path: /home/ubuntu/.config/doublecmd/doublecmd.xml
+- key: script-install-doublecmd-xml
+  target: /home/ubuntu/.config/doublecmd/doublecmd.xml
 - chown -R ubuntu:ubuntu /home/ubuntu/.config/doublecmd

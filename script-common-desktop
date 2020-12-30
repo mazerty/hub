@@ -30,13 +30,13 @@
 - snap install discord
 
 - mkdir -p /home/ubuntu/.aws
-- lookup: script-common-desktop-awscredentials
-  path: /home/ubuntu/.aws/credentials
+- key: script-common-desktop-awscredentials
+  target: /home/ubuntu/.aws/credentials
 - chown -R ubuntu:ubuntu /home/ubuntu/.aws
 
 - mkdir -p /mnt/perm
-- lookup: script-common-desktop-fstab
-  path: /var/tmp/fstab-append
+- key: script-common-desktop-fstab
+  target: /var/tmp/fstab-append
 - cat /var/tmp/fstab-append >> /etc/fstab
 - mount -a
 

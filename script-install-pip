@@ -3,6 +3,6 @@
 
 - su ubuntu -c "pip3 install --user virtualenv"
 
-- lookup: script-install-pip-bashrc
-  path: /var/tmp/bashrc.pip.append
+- key: script-install-pip-bashrc
+  target: /var/tmp/bashrc.pip.append
 - cat /var/tmp/bashrc.pip.append >> /home/ubuntu/.bashrc

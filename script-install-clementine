@@ -2,6 +2,6 @@
 - apt-get -y install clementine
 
 - mkdir -p /home/ubuntu/.config/Clementine
-- lookup: script-install-clementine-conf
-  path: /home/ubuntu/.config/Clementine/Clementine.conf
+- key: script-install-clementine-conf
+  target: /home/ubuntu/.config/Clementine/Clementine.conf
 - chown -R ubuntu:ubuntu /home/ubuntu/.config/Clementine

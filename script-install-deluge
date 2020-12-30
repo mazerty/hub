@@ -2,6 +2,6 @@
 - apt-get -y install deluge
 
 - mkdir -p /home/ubuntu/.config/deluge
-- lookup: script-install-deluge-conf
-  path: /home/ubuntu/.config/deluge/core.conf
+- key: script-install-deluge-conf
+  target: /home/ubuntu/.config/deluge/core.conf
 - chown -R ubuntu:ubuntu /home/ubuntu/.config/deluge

@@ -4,6 +4,6 @@
 
 - su ubuntu -c "GEM_HOME=/home/ubuntu/gems gem install bundler"
 
-- lookup: script-install-ruby-bashrc
-  path: /var/tmp/bashrc.ruby.append
+- key: script-install-ruby-bashrc
+  target: /var/tmp/bashrc.ruby.append
 - cat /var/tmp/bashrc.ruby.append >> /home/ubuntu/.bashrc
