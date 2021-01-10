@@ -1,0 +1,12 @@
+---
+- wget -O- https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
+- add-apt-repository https://deb.nodesource.com/node_14.x
+- apt-get -y install nodejs
+
+- key: script-install-nodejs-npmrc
+  target: /home/ubuntu/.npmrc
+- chown ubuntu:ubuntu /home/ubuntu/.npmrc
+
+- key: script-install-nodejs-bashrc
+  target: /var/tmp/bashrc.nodejs.append
+- cat /var/tmp/bashrc.nodejs.append >> /home/ubuntu/.bashrc
