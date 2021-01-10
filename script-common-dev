@@ -1,6 +1,6 @@
 ---
 - include: script-install-git
-- include: script-install-nodejs10
+- include: script-install-nodejs14
 - include: script-install-ruby
 
 - apt-get -y install openjdk-11-jdk
