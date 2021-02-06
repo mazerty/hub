@@ -1,7 +1,0 @@
----
-- include: script-common-upgrade
-- include: script-install-heal
-
-- ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-
-- include: script-common-reboot

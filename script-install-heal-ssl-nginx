@@ -1,9 +1,0 @@
-server {
-  listen 2502 ssl;
-
-  ssl_certificate /etc/letsencrypt/live/{{ "fqdn" | get }}/fullchain.pem;
-  ssl_certificate_key /etc/letsencrypt/live/{{ "fqdn" | get }}/privkey.pem;
-
-  root /var/tmp;
-  try_files /status.json =404;
-}

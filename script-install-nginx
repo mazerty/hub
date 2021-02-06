@@ -1,8 +1,0 @@
----
-- apt-get -y install nginx
-
-- key: script-install-nginx-patch
-  target: /var/tmp/nginx.service.patch
-- patch /lib/systemd/system/nginx.service /var/tmp/nginx.service.patch
-
-- rm /etc/nginx/sites-enabled/default

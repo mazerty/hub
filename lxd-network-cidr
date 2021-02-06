@@ -1,1 +1,0 @@
-{{ "lxd-host-ip" | get }}/24
