@@ -1,0 +1,22 @@
+---
+- apt-get -y remove transmission-common
+- apt-get -y remove blueman
+
+- include: script-common-upgrade
+- include: script-install-git
+- include: script-install-doublecmd
+- include: script-install-terminator
+
+- apt-get -y install curl
+- apt-get -y install vim
+- apt-get -y install htop
+- apt-get -y install openjdk-11-jdk
+- apt-get -y install openjdk-11-source
+- apt-get -y install openjdk-11-doc
+- apt-get -y install maven
+
+- apt-get -y install gcc
+- apt-get -y install make
+- apt-get -y install perl
+
+- snap install intellij-idea-community --classic
