@@ -3,3 +3,4 @@
 
 - apt-get -y install nvidia-driver-440
 - apt-get -y install steam
+- snap install obs-studio
